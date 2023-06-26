@@ -15,7 +15,7 @@ stopw  = set(stopwords.words('english'))
 df =pd.read_csv('job_final.csv') 
 df['test']=df['Job_Description'].apply(lambda x: ' '.join([word for word in str(x).split() if len(word)>2 and word not in (stopw)]))
 
-app=Flask(__name__, template_folder='templates', static_folder='static')
+app=Flask(__name__)
 
 
 
@@ -106,3 +106,6 @@ if __name__ =="__main__":
     
     
     app.run()
+
+
+    ##This code is for uploading the resume and resulting the relevant skills and with companies and their locations
