@@ -105,7 +105,11 @@ def submit_data():
 if __name__ =="__main__":
     
     
+<<<<<<< HEAD
     app.run()
 
 
     ##This code is for uploading the resume and resulting the relevant skills and with companies and their locations
+=======
+    app.run(debug=False, host = '0.0.0.0')
+>>>>>>> 041c59e5d090711b672ff70875820cea754b07ed
